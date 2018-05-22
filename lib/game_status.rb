@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   def won?(board)
     WIN_COMBINATIONS.each do |combo|
       if (combo.all? {|space| board[space] == "X"})
-        return TRUE
+        return combo
       else
         return FALSE
       end
