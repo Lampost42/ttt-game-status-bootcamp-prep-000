@@ -20,5 +20,6 @@ WIN_COMBINATIONS = [
         return combo
       end
     end
+    return FALSE
   end
       
