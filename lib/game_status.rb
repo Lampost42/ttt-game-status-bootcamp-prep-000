@@ -49,7 +49,7 @@ WIN_COMBINATIONS = [
     end
   end
   
-  def winner?(board)
+  def winner(board)
     who_won = won?(board)
     return who_won[0]
   end
