@@ -26,7 +26,7 @@ WIN_COMBINATIONS = [
   end
   
   def full?(board)
-    if (board.all? {|space| board[space] == "X" || board[space] == "O"})
+    if (board.all? {|space| space == "X" || space == "O"})
       return TRUE
     else
       return FALSE
