@@ -18,6 +18,8 @@ WIN_COMBINATIONS = [
     WIN_COMBINATIONS.each do |combo|
       combo.each do |space|
         if board[space] == "X"
-          return FALSE
+          win[space] = TRUE
         end
+      end
+      if win.all?
     
