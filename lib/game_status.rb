@@ -24,4 +24,7 @@ WIN_COMBINATIONS = [
     end
     return FALSE
   end
+  
+  def full?(board)
+    
       
