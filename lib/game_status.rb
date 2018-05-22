@@ -32,5 +32,7 @@ WIN_COMBINATIONS = [
       return FALSE
     end
   end
+  
+  def draw?(board)
     
       
