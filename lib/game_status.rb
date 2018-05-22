@@ -16,9 +16,9 @@ WIN_COMBINATIONS = [
   ]
   def won?(board)
     WIN_COMBINATIONS.each do |combo|
-      if (combo.all? {|space| board[space] == "X"})
+      if combo.all? {|space| board[space] == "X"}
         return combo
-      elsif (combo.all? {|space| board[space] == "O"})
+      elsif combo.all? {|space| board[space] == "O"}
         return combo
       end
     end
@@ -26,7 +26,7 @@ WIN_COMBINATIONS = [
   end
   
   def full?(board)
-    if (board.all? {|space| space == "X" || space == "O"})
+    if board.all? {|space| space == "X" || space == "O"}
       return TRUE
     else
       return FALSE
@@ -41,6 +41,13 @@ WIN_COMBINATIONS = [
     end
   end
   
-  def over(board)
+  def over?(board)
+    if won?(board) != FALSE || draw?(board) == TRUE
+      return TRUE
+    else
+      return FALSE
+    end
+  end
+  
     
       
