@@ -14,4 +14,8 @@ WIN_COMBINATIONS = [
   [1,4,7],
   [2,5,8]
   ]
-  
+  def won(board)
+    WIN_COMBINATIONS.each do |combo|
+      combo.each do |space|
+        if space == "X"
+    
