@@ -50,8 +50,7 @@ WIN_COMBINATIONS = [
   end
   
   def winner(board)
-    who_won = won?(board)
-    return who_won[0]
-  end
+    return board[won?(board)[0]]
+    
     
       
