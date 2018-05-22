@@ -16,10 +16,7 @@ WIN_COMBINATIONS = [
   ]
   def won(board)
     WIN_COMBINATIONS.each do |combo|
-      combo.each do |space|
+      combo.all do |space|
         if board[space] == "X"
           win[space] = TRUE
         end
-      end
-      if win.all?
-    
